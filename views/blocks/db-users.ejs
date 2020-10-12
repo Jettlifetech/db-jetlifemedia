@@ -1,0 +1,9 @@
+ <ul>
+      <%
+        var list = '';
+        for (i = 0; i < userlist.length; i++) {
+          list += '</br><li><a href="' + userlist[i].email + '" class="btn btn-info" role="button">' + userlist[i].username + '</a></li>';
+        }
+      %>
+      <%- list %>
+    </ul>
